@@ -1,0 +1,50 @@
+# ----------------------------------------------------
+# 1. 빌드 결과물 및 종속성 (Build Artifacts & Dependencies)
+# ----------------------------------------------------
+/target/             # Maven 빌드 폴더
+/build/              # Gradle 빌드 폴더
+*.jar
+*.war
+*.zip
+*.tar.gz
+classes/
+dependency-cache/
+
+# ----------------------------------------------------
+# 2. IDE 및 설정 파일 (IDE Files & Settings)
+# ----------------------------------------------------
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+### Eclipse (STS) ###
+.apt_generated/
+.classpath
+.project
+.settings/
+.factorypath
+bin/
+
+### VS Code ###
+.vscode/
+
+# ----------------------------------------------------
+# 3. 로그 및 운영체제 파일 (Logs & OS Files)
+# ----------------------------------------------------
+*.log
+logs/
+.DS_Store          # macOS 파일
+Thumbs.db          # Windows 파일
+
+# ----------------------------------------------------
+# 4. Gradle Wrapper (wrapper.jar는 추적)
+# ----------------------------------------------------
+# wrapper.jar 파일은 추적해야 하므로 명시적으로 제외하지 않습니다.
+# (제공해주신 내용 중 !gradle/wrapper/gradle-wrapper.jar 부분은
+#  보통 추적하므로 주석 처리하거나 제외합니다.)
+
+# 임시 파일
+temp-*
